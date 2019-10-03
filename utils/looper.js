@@ -6,7 +6,7 @@ const chalk = require('chalk')
 const looper = (contents, fname, offset, limit, type) => {
     //TODO check for empty data types and skip them
         //if (contents[type].length !== 0) {
-    let wpath = path.join(process.cwd(), 'lemondrop', fname.split(".json")[0] + `-${type}-page${(offset / limit) + 1}.json`);
+    let wpath = path.join(process.cwd(), 'lemondrop_export', fname.split(".json")[0] + `-${type}-page${(offset / limit) + 1}.json`);
     let data = []
 
     //Write data to data arr between offset and offset + limit

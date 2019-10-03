@@ -8,7 +8,7 @@ module.exports = (args) => {
     const max_len = parseInt(args.records) || 10000 //Defaults to 10000 records
     var contents = JSON.parse(fs.readFileSync(fpath, 'utf8'))
     const types = Object.keys(contents)
-    const exp_dir = path.join(process.cwd(), 'lemondrop')
+    const exp_dir = path.join(process.cwd(), 'lemondrop_export')
 
     //TODO - add another parameter for the write directory
         //Allow for a full path and a local path
