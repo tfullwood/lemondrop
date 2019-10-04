@@ -8,15 +8,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pub": "./node_modules/nexe/index.js bin/lemondrop --output='./bin/build/lemondrop'"
+    "pkg": "pkg bin/lemondrop --output './bin/build/lemondrop'"
   },
   "author": "Trevor Fullwood",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
     "yargs": "^14.0.0"
-  },
-  "devDependencies": {
-    "nexe": "^3.3.2"
   }
 }
